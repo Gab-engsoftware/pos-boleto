@@ -24,12 +24,12 @@
                         <input id="vendedor" type="text" name="vendedor" placeholder="Digite seu nome" required> 
                     </div>
                     <div class="input-box">
-                        <label for="numerocontrato">Número do Contrato</label>
-                        <input id="numerocontrato" type="text" name="numerocontrato" placeholder="Número do Contrato" required> 
+                        <label for="numero_contrato">Número do Contrato</label>
+                        <input id="numero_contrato" type="text" name="numero_contrato" placeholder="Número do Contrato" required> 
                     </div>
                     <div class="input-box">
-                        <label for="vencimentoboleto">Data de Vencimento</label>
-                        <input id="vencimentoboleto" type="date" name="vencimentoboleto" placeholder="Digite a data de vencimento" required> 
+                        <label for="vencimento_boleto">Data de Vencimento</label>
+                        <input id="vencimento_boleto" type="date" name="vencimento_boleto" placeholder="Digite a data de vencimento" required> 
                     </div>
                     
                 </div>
@@ -39,8 +39,8 @@
                         <input id="cnpj" type="text"  onblur="checkCnpj(this.value)" data-mask="00.000.000/0000-00" name="cnpj" placeholder="Digite o CNPJ" required> 
                     </div>
                     <div class="input-box">
-                        <label for="nomecliente">Nome do Cliente: </label>
-                        <input id="nomecliente" type="text" name="nomecliente" placeholder="Digite o nome cliente" required>  
+                        <label for="nome_cliente">Nome do Cliente: </label>
+                        <input id="nome_cliente" type="text" name="nome_cliente" placeholder="Digite o nome cliente" required>  
                     </div>  
                     
                     <div class="input-box">
@@ -52,13 +52,13 @@
                 <div class="input-group">
 
                     <div class="input-box">
-                        <label for="razaoSocial">Razão Social</label>
-                        <input id="razaosocial" type="text" name="razaosocial" placeholder="Digite a Razão Social" required> 
+                        <label for="razao_social">Razão Social</label>
+                        <input id="razao_social" type="text" name="razao_social" placeholder="Digite a Razão Social" required> 
                     </div>
 
                     <div class="input-box">
-                        <label for="nomeFantasia">Nome Fantasia</label>
-                        <input id="nomefantasia" type="text" name="nomefantasia" placeholder="Digite o Nome Fantasia" required> 
+                        <label for="nome_fantasia">Nome Fantasia</label>
+                        <input id="nome_fantasia" type="text" name="nome_fantasia" placeholder="Digite o Nome Fantasia" required> 
                     </div>
 
                     <div class="input-box">
@@ -137,8 +137,8 @@
                     if(data.nome == undefined){
                         alert(data.status + " " + data.message)
                     }else{
-                        document.getElementById('razaosocial').value = data.nome;
-                        document.getElementById('nomefantasia').value = data.fantasia;
+                        document.getElementById('razao_social').value = data.nome;
+                        document.getElementById('nome_fantasia').value = data.fantasia;
                         document.getElementById('logradouro').value = data.logradouro;
                         document.getElementById('numero').value = data.numero;
                         document.getElementById('municipio').value = data.municipio;
